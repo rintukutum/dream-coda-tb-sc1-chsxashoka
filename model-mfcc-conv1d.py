@@ -66,8 +66,7 @@ def model_conv1d():
     num_epochs = 100
     num_batch_size = 32
     history = []
-    checkpointer = []
-    tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=f'./Callbacks-cnn-b{num_batch_size}-e{num_epochs}-lr-0_01/', histogram_freq=1)
+    tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=f'./callbacks-cnn-b{num_batch_size}-e{num_epochs}-lr-0_01/', histogram_freq=1)
     start = datetime.now()
     for i in range(5):#(kf.get_n_splits(train)):
         print("Fold: ", i)

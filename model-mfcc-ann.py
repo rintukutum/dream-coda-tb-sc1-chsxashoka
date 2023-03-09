@@ -68,7 +68,7 @@ def model_ann():
     history = []
     checkpointer = []
     for i in range(5):
-        checkpointer.append(ModelCheckpoint(filepath=f'./Callbacks-ann-b{num_batch_size}-e{num_epochs}/callback_'+str(i)+'.hdf5', verbose = 1, save_best_only = True))
+        checkpointer.append(ModelCheckpoint(filepath=f'./callbacks-ann-b{num_batch_size}-e{num_epochs}/callback_'+str(i)+'.hdf5', verbose = 1, save_best_only = True))
     start = datetime.now()
     for i in range(5):
         print("Fold: ", i)
